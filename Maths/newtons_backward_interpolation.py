@@ -1,3 +1,4 @@
+#Newton's Backward Interpolation
 import numpy as np
 
 x=np.array([1921,1931,1941,1951,1961])
