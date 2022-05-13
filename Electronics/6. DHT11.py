@@ -1,3 +1,4 @@
+# Interfacing temp and humidity(DHT11) with RPi
 import RPi.GPIO as G
 import time
 import Adafruit_DHT
@@ -5,9 +6,9 @@ import Adafruit_DHT
 S = Adafruit_DHT.DHT11
 G.setwarnings(False)
 G.setmode(G.BCM)
-G.setup(6,G.OUT)    #Used as the output pin; for the LED
+G.setup(6,G.OUT)    # Used as the output pin; for the LED
 
-def light():    #funtion to turn on LED if h>29
+def light():        # funtion to turn on LED if h>29
     if(h>29):
         G.output(6,G.HIGH)
     else:

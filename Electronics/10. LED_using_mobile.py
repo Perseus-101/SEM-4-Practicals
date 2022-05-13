@@ -1,3 +1,4 @@
+# LED swiching using mobile
 import RPi.GPIO as G
 from flask import Flask, render_template, request
 import datetime
@@ -46,5 +47,5 @@ if __name__ == '__main__':
 
 # To run this code, connect RPi to a wifi network, note down the IP address;
 # then head over to the terminal, change the directory to where this file is saved
-# and type 'sudo python3 filename.py' ; then open up browser on your phone or on the RPi itself
-# and enter the IP address noted down earlier in the URL box
+# and type 'sudo python3 filename.py' ; then open up browser on your phone 
+# or on the RPi itself and enter the IP address noted down earlier in the URL box
