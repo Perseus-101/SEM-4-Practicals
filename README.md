@@ -8,4 +8,4 @@ Code to almost all the programs for SEM 4 subjects
   All 10 programs has been uploaded and updated including the code snippets.
   
 ## CS
-  For now, I don't have a copy of all the programs that we did. If you guys have any suggestion, DM me as to how we could resolve this issue. I'll commit the CS programs asap.
+  Have uploaded almost all the programs, except Hashing and heapsort. I'll upload those in a few hours or so, if not then tommorow. 
