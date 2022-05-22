@@ -4,6 +4,13 @@ struct node
     struct node *left, *right;
 };
 
+void init(struct node **root)
+{
+    struct node *temp=(struct node*)malloc(sizeof(struct node));
+    temp->left=NULL;
+    temp->right=NULL;
+}
+
 struct node *createnode(struct node *newnode, int data)
 {
     newnode = malloc(sizeof(struct node));
@@ -43,13 +50,6 @@ void insert(struct node **root, int data)
             }
         }
     }
-}
-
-void init(struct node **root)
-{
-    struct node *temp=(struct node*)malloc(sizeof(struct node));
-    temp->left=NULL;
-    temp->right=NULL;
 }
 
 void inOrder(struct node *temp)

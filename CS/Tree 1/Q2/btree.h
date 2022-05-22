@@ -108,13 +108,26 @@ void create(struct node **root, int nodes)
 }
 
 int cnt=0;
-int count(struct node *temp)
+int countleaf(struct node *temp)
 {
-    if(temp)
+    if(temp!=NULL)
     {
-        cnt++; 
-        count(temp->left);
-        count(temp->right);
+        countleaf(temp->left);
+        if((temp->left==NULL) && (temp->right==NULL))
+            cnt++; 
+        countleaf(temp->right);
+    }
+    return cnt;
+}
+
+int countnonleaf(struct node *temp)
+{
+    if(temp!=NULL)
+    {
+        countnonleaf(temp->left);
+        if((temp->left!=NULL) || (temp->right!=NULL))
+            cnt++;
+        countnonleaf(temp->right);
     }
     return cnt;
 }

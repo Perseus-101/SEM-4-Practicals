@@ -5,7 +5,7 @@
 int menu()
 {
     int ch;
-    printf("\n\n0.Exit\n1.Create BST\n2.Insert Node\n3.Search\n4.inOrder\n5.postOrder\n6.preOrder\n7.Create\n8.Count\nEnter Choice: ");
+    printf("\n\n0.Exit\n1.Create BST\n2.Insert Node\n3.Search\n4.inOrder\n5.postOrder\n6.preOrder\n7.Create\n8.Count Leaf Node\n9.Count non Leaf node\nEnter Choice: ");
     scanf("%d", &ch);
     return ch;
 }
@@ -58,7 +58,12 @@ int main()
         }
         else if(ch==8)
         {
-            cnt=count(root);
+            cnt=countleaf(root);
+            printf("\nNumber of nodes: %d", cnt);
+        }
+        else if(ch==9)
+        {
+            cnt=countnonleaf(root);
             printf("\nNumber of nodes: %d", cnt);
         }
     }
